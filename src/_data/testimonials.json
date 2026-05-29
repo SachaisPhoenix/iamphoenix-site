@@ -1,19 +1,4 @@
 {
-  "hero_speaking": {
-    "quote": "Sacha was a hugely impactful speaker. Outstanding. She truly challenged our audience to learn something new about themselves and the power of positive affirmation and clarity of purpose. Six months later, we continue to receive positive feedback.",
-    "name": "Sinead Heneghan",
-    "role": "CEO, Learning & Development Institute"
-  },
-  "hero_consulting": {
-    "quote": "From the start, Sacha took the time to properly understand our environment and the specific gaps we were trying to close, rather than arriving with a ready-made solution. What followed was practical and immediately applicable. The confidence our salespeople brought to executive conversations noticeably increased afterwards. If you are looking for someone who genuinely understands the sales environment and knows how to make learning stick, I would not hesitate to recommend her.",
-    "name": "Guro Bakkeng Bergan",
-    "role": "Global VP, Sales Acceleration, Strategy & Execution, New Relic"
-  },
-  "hero_coaching": {
-    "quote": "You need Sacha in your corner. She combines her natural intelligence and deep empathy in her coaching to help you to dig deeper and think bigger. At a time when I felt professionally adrift, Sacha brought thoughtful structure and clear action to help me move forward with purpose.",
-    "name": "Erin Nixon",
-    "role": "Assistant Dean of Admissions and Financial Aid, Stanford Graduate School of Business"
-  },
   "talk_resilience": [
     {
       "quote": "Sacha did a keynote for the itag Digital Women's Christmas gathering in December 2025 and it was genuinely one of the most moving talks I've experienced. She shared her deeply personal journey of reclaiming her independence after a surgical complication left her paralysed down one side of her body. A story that could so easily have been defined by loss was instead a masterclass in courage, resilience and determination. What struck me most was her honesty. She didn't shy away from the darkest moments of her recovery, and it was precisely that vulnerability that made her talk so powerful. She held the room in complete silence.",
@@ -21,11 +6,16 @@
       "role": "Skillnet Network Manager, itag"
     },
     {
-      "quote": "I invited Sacha to speak for our team as part of the International Day of People with Disabilities, and it made a lasting impression on our team. Drawing on her lived experience, she helped the audience understand what genuine resilience looks like. Sacha is inspirational without trying to be, and our employees walked away with implementable lessons and a stronger sense of how they can choose resilience in their own lives. Sacha's story also helped them gain a deeper understanding of disability and, crucially, a clearer sense of why psychological safety around disclosure matters. Sacha is a compelling and thoughtful speaker, and I would recommend her without hesitation for any organisation serious about inclusion.",
+      "quote": "I invited Sacha to speak for our team as part of the International Day of People with Disabilities, and it made a lasting impression on our team. Drawing on her lived experience, she helped the audience understand what genuine resilience looks like. Sacha is inspirational without trying to be, and our employees walked away with implementable lessons and a stronger sense of how they can choose resilience in their own lives. Sacha's story also helped them gain a deeper understanding of disability and, crucially, a clearer sense of why psychological safety around disclosure matters. Sacha is a compelling and thoughtful speaker, and I would recommend her without hesitation for any organisation serious about inclusion!",
       "name": "Siobhan Sweeney",
       "role": "Global Senior Director Talent Development, Engagement & Inclusion, Element Materials"
     }
   ],
+  "hero_coaching": {
+    "quote": "You need Sacha in your corner. She combines her natural intelligence and deep empathy in her coaching to help you to dig deeper and think bigger. At a time when I felt professionally adrift, Sacha brought thoughtful structure and clear action to help me move forward with purpose.",
+    "name": "Erin Nixon",
+    "role": "Assistant Dean of Admissions and Financial Aid, Stanford Graduate School of Business"
+  },
   "talk_disability": [
     {
       "quote": "Sacha delivered a talk on disability awareness in the workplace for one of our Common Purpose leadership programmes that went far beyond facts and figures. By using a mix of humour and lived experience, she helped our participants understand the obstacles faced by employees with disabilities. Her use of practical examples gave participants a clear understanding of what they can do as leaders to ensure a more inclusive workplace and work towards closing the disability employment gap.",
@@ -38,6 +28,21 @@
       "role": "Head of Employment Law, Byrne Wallace Shields LLP"
     }
   ],
+  "coaching_executive": {
+    "quote": "Sacha had a long-lasting impact on my career when she helped me to navigate how to share a very private matter at work. With her guidance, I came up with a communication strategy which worked so perfectly that there was barely a ripple of a reaction to it. I've reused this approach in subsequent roles with equal success. I am forever grateful that Sacha has helped me to be even more authentic as a leader.",
+    "name": "Ingo Duckerschein",
+    "role": "COO, Xevio"
+  },
+  "hero_speaking": {
+    "quote": "Sacha was a hugely impactful speaker. Outstanding. She truly challenged our audience to learn something new about themselves and the power of positive affirmation and clarity of purpose. Six months later, we continue to receive positive feedback.",
+    "name": "Sinead Heneghan",
+    "role": "CEO, Learning & Development Institute"
+  },
+  "hero_consulting": {
+    "quote": "From the start, Sacha took the time to properly understand our environment and the specific gaps we were trying to close, rather than arriving with a ready-made solution. What followed was practical and immediately applicable. The confidence our salespeople brought to executive conversations noticeably increased afterwards. If you are looking for someone who genuinely understands the sales environment and knows how to make learning stick, I would not hesitate to recommend her.",
+    "name": "Guro Bakkeng Bergan",
+    "role": "Global VP, Sales Acceleration, Strategy & Execution, New Relic"
+  },
   "talk_social_learning": [
     {
       "quote": "Sacha did a talk as part of the IDA's Learning Week in 2023 on Social Learning in a hybrid environment, and it really helped our participants get a better understanding of how they can better learn from each other in an informal way. By mixing data and practical examples she showed the power of social learning and how it goes beyond 'watercooler conversations'.",
@@ -45,11 +50,6 @@
       "role": "Organisation Development, IDA Ireland"
     }
   ],
-  "coaching_executive": {
-    "quote": "Sacha had a long-lasting impact on my career when she helped me to navigate how to share a very private matter at work. With her guidance, I came up with a communication strategy which worked so perfectly that there was barely a ripple of a reaction to it. I've reused this approach in subsequent roles with equal success. I am forever grateful that Sacha has helped me to be even more authentic as a leader.",
-    "name": "Ingo Duckerschein",
-    "role": "COO, Xevio"
-  },
   "coaching_return_to_work": {
     "quote": "Practical, insightful, and always tailored to my goals and strengths. Sacha provided clear direction throughout the job search process, from refining my CV to preparing me for interviews. What stood out most was her genuine commitment to my success and her ability to build confidence.",
     "name": "Niamh Leonard",
