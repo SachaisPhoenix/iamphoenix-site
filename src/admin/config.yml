@@ -1,0 +1,130 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "src/assets/uploads"
+public_folder: "/assets/uploads"
+
+site_url: https://iamphoenix.ie
+display_url: https://iamphoenix.ie
+logo_url: https://iamphoenix.ie/iamphoenix-logo-horizontal-transparent.png
+
+collections:
+  - name: "testimonials"
+    label: "Testimonials"
+    files:
+      - file: "src/_data/testimonials.json"
+        label: "All testimonials"
+        name: "testimonials"
+        fields:
+          - label: "Speaking page - Hero quote"
+            name: "hero_speaking"
+            widget: "object"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role and company", name: "role", widget: "string" }
+          - label: "Consulting page - Hero quote"
+            name: "hero_consulting"
+            widget: "object"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role and company", name: "role", widget: "string" }
+          - label: "Coaching page - Hero quote"
+            name: "hero_coaching"
+            widget: "object"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role and company", name: "role", widget: "string" }
+          - label: "Talk 01 - Choosing Resilience"
+            name: "talk_resilience"
+            widget: "list"
+            summary: "{{ fields.name }} - {{ fields.role }}"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role and company", name: "role", widget: "string" }
+          - label: "Talk 02 - Disability in the workplace"
+            name: "talk_disability"
+            widget: "list"
+            summary: "{{ fields.name }} - {{ fields.role }}"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role and company", name: "role", widget: "string" }
+          - label: "Talk 03 - Social learning"
+            name: "talk_social_learning"
+            widget: "list"
+            summary: "{{ fields.name }} - {{ fields.role }}"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role and company", name: "role", widget: "string" }
+          - label: "Coaching - Executive tier"
+            name: "coaching_executive"
+            widget: "object"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role and company", name: "role", widget: "string" }
+          - label: "Coaching - Return to work tier"
+            name: "coaching_return_to_work"
+            widget: "object"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role and company", name: "role", widget: "string" }
+          - label: "Consulting - Psychological Safety offer"
+            name: "consulting_psych_safety"
+            widget: "object"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role and company", name: "role", widget: "string" }
+
+  - name: "columns"
+    label: "Irish Times columns"
+    files:
+      - file: "src/_data/columns.json"
+        label: "All columns"
+        name: "columns"
+        fields:
+          - label: "Columns"
+            name: "columns"
+            widget: "list"
+            summary: "{{ fields.date }} - {{ fields.title }}"
+            fields:
+              - { label: "Date (e.g. October 2025)", name: "date", widget: "string" }
+              - { label: "Title", name: "title", widget: "text" }
+              - { label: "URL", name: "url", widget: "string" }
+
+  - name: "logos"
+    label: "Past audience logos"
+    files:
+      - file: "src/_data/logos.json"
+        label: "Logo strip"
+        name: "logos"
+        fields:
+          - label: "Logos (order = display order)"
+            name: "logos"
+            widget: "list"
+            summary: "{{ fields.name }} ({{ fields.file }})"
+            fields:
+              - { label: "Company name", name: "name", widget: "string" }
+              - { label: "Filename in Logos-processed/", name: "file", widget: "string", hint: "e.g. musgrave.png - upload your logo PNG to Logos-processed folder first" }
+
+  - name: "site"
+    label: "Site settings"
+    files:
+      - file: "src/_data/site.json"
+        label: "Brand settings"
+        name: "site"
+        fields:
+          - { label: "Site name", name: "name", widget: "string" }
+          - { label: "Owner name", name: "owner", widget: "string" }
+          - { label: "Site URL", name: "url", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Contact email", name: "email", widget: "string" }
+          - { label: "Calendly link", name: "calendly", widget: "string" }

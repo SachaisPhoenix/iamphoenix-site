@@ -1,0 +1,35 @@
+[build]
+  command = "npm install && npx @11ty/eleventy"
+  publish = "_site"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[redirects]]
+  from = "/admin"
+  to = "/admin/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/speaking.html"
+  to = "/speaking/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/coaching.html"
+  to = "/coaching/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/consulting.html"
+  to = "/consulting/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/about.html"
+  to = "/about/"
+  status = 301
+  force = true
