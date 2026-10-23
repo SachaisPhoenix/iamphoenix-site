@@ -578,7 +578,7 @@ permalink: /about.html
     <p class="credentials-intro">I'm a compulsive learner. Partly because the ground under all of us keeps shifting, and partly because I love the feeling of understanding something new. The thread through what I've studied: how people learn, how businesses change, how the brain actually works, and now, how AI is reshaping all three.</p>
 
     <ol class="credential-list">
-      {%- for cred in credentials %}
+      {%- for cred in credentials.credentials %}
       <li class="credential">
         <div class="credential-year">{{ cred.year }}</div>
         <div class="credential-body">
