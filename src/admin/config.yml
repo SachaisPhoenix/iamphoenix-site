@@ -84,6 +84,24 @@ collections:
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Role and company", name: "role", widget: "string" }
 
+  - name: "credentials"
+    label: "Academic credentials"
+    files:
+      - file: "src/_data/credentials.json"
+        label: "All credentials"
+        name: "credentials"
+        fields:
+          - label: "Credentials (order = display order, newest first)"
+            name: "credentials"
+            widget: "list"
+            summary: "{{ fields.year }} - {{ fields.title }} ({{ fields.institution }})"
+            fields:
+              - { label: "Year", name: "year", widget: "string" }
+              - { label: "Title (e.g. Executive MBA)", name: "title", widget: "string" }
+              - { label: "Institution", name: "institution", widget: "string", required: false }
+              - { label: "Honour (e.g. 'First-class honours' or 'Distinction')", name: "honour", widget: "string", required: false }
+              - { label: "Detail (e.g. dissertation title or project focus)", name: "detail", widget: "text", required: false }
+
   - name: "columns"
     label: "Irish Times columns"
     files:
