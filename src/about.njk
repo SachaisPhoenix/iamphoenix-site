@@ -578,50 +578,20 @@ permalink: /about.html
     <p class="credentials-intro">I'm a compulsive learner. Partly because the ground under all of us keeps shifting, and partly because I love the feeling of understanding something new. The thread through what I've studied: how people learn, how businesses change, how the brain actually works, and now, how AI is reshaping all three.</p>
 
     <ol class="credential-list">
+      {%- for cred in credentials %}
       <li class="credential">
-        <div class="credential-year">2026</div>
+        <div class="credential-year">{{ cred.year }}</div>
         <div class="credential-body">
-          <h3>Executive MBA</h3>
-          <p class="credential-meta"><strong>Dublin City University</strong> &middot; First-class honours, top three of class</p>
-          <p class="credential-detail">Strategic consultancy project on AI-driven workforce and succession planning.</p>
+          <h3>{{ cred.title }}</h3>
+          {%- if cred.institution or cred.honour %}
+          <p class="credential-meta">{% if cred.institution %}<strong>{{ cred.institution }}</strong>{% endif %}{% if cred.institution and cred.honour %} &middot; {% endif %}{{ cred.honour }}</p>
+          {%- endif %}
+          {%- if cred.detail %}
+          <p class="credential-detail">{{ cred.detail | safe | replace("Dissertation:", "Dissertation:") | replace("The impact of social learning in a hybrid working environment.", "<em>The impact of social learning in a hybrid working environment</em>.") }}</p>
+          {%- endif %}
         </div>
       </li>
-      <li class="credential">
-        <div class="credential-year">2026</div>
-        <div class="credential-body">
-          <h3>Professional Diploma in Advanced AI for Business</h3>
-          <p class="credential-meta"><strong>University College Dublin</strong> &middot; Distinction</p>
-        </div>
-      </li>
-      <li class="credential">
-        <div class="credential-year">2024</div>
-        <div class="credential-body">
-          <h3>Master's in Strategic Learning &amp; Development</h3>
-          <p class="credential-meta"><strong>Griffith College</strong> &middot; First-class honours, award for best academic achievement</p>
-          <p class="credential-detail">Dissertation: <em>The impact of social learning in a hybrid working environment</em>.</p>
-        </div>
-      </li>
-      <li class="credential">
-        <div class="credential-year">2023</div>
-        <div class="credential-body">
-          <h3>Professional Diploma in AI for Learning</h3>
-          <p class="credential-meta"><strong>Digital Learning Institute</strong> &middot; Distinction</p>
-        </div>
-      </li>
-      <li class="credential">
-        <div class="credential-year">2021</div>
-        <div class="credential-body">
-          <h3>Advanced Diploma in Coaching with Neuroscience</h3>
-          <p class="credential-meta"><strong>Positive Success Group</strong></p>
-        </div>
-      </li>
-      <li class="credential">
-        <div class="credential-year">2009</div>
-        <div class="credential-body">
-          <h3>Diploma in Executive Coaching</h3>
-          <p class="credential-meta"><strong>ICM</strong></p>
-        </div>
-      </li>
+      {%- endfor %}
     </ol>
   </div>
 </section>
